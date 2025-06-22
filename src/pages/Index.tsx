@@ -10,7 +10,6 @@ import ExamSection from '@/components/ExamSection';
 const Index = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [activeSection, setActiveSection] = useState('dashboard');
-  const [sidebarCollapsed, setSidebarCollapsed] = useState(false);
 
   const handleLogin = () => {
     setIsLoggedIn(true);
@@ -52,18 +51,16 @@ const Index = () => {
   }
 
   return (
-    <div className="min-h-screen bg-primary dark:bg-gray-900 flex w-full">
+    <div className="min-h-screen bg-violet-50 flex w-full">
       <Sidebar
         activeSection={activeSection}
         onSectionChange={setActiveSection}
-        isCollapsed={sidebarCollapsed}
-        onToggle={() => setSidebarCollapsed(!sidebarCollapsed)}
       />
       
       <div className="flex-1 flex flex-col min-w-0">
         <Header title={getSectionTitle(activeSection)} />
         
-        <main className="flex-1 p-6 overflow-auto bg-gray-50 dark:bg-gray-800">
+        <main className="flex-1 p-6 overflow-auto bg-violet-50">
           <div className="max-w-7xl mx-auto animate-fade-in">
             {renderContent()}
           </div>
