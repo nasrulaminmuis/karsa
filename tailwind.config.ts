@@ -26,18 +26,57 @@ export default {
 				background: 'hsl(var(--background))',
 				foreground: 'hsl(var(--foreground))',
 				primary: {
-					DEFAULT: '#8B3CF7',
+					DEFAULT: '#7C20A1',
 					50: '#F3E7FF',
 					100: '#E6CCFF',
 					200: '#D6B3FF',
 					300: '#C399FF',
 					400: '#A066FF',
-					500: '#8B3CF7',
-					600: '#7C22E8',
+					500: '#7C20A1',
+					600: '#701A75',
 					700: '#6B1FD1',
 					800: '#5A1CB3',
 					900: '#4A1A94',
 					foreground: 'hsl(var(--primary-foreground))'
+				},
+				red: {
+					DEFAULT: '#B91C1C',
+					700: '#B91C1C'
+				},
+				violet: {
+					DEFAULT: '#F5F3FF',
+					50: '#F5F3FF'
+				},
+				fuchsia: {
+					DEFAULT: '#701A75',
+					900: '#701A75'
+				},
+				blue: {
+					DEFAULT: '#2493FB',
+					500: '#2493FB'
+				},
+				white: '#FFFFFF',
+				black: '#000000',
+				gray: {
+					DEFAULT: '#4F4F4F',
+					400: '#4F4F4F',
+					500: '#4F4F4F'
+				},
+				orange: {
+					DEFAULT: '#FF9800',
+					500: '#FF9800'
+				},
+				green: {
+					DEFAULT: '#22C55E',
+					500: '#22C55E'
+				},
+				yellow: {
+					DEFAULT: '#EAB308',
+					500: '#EAB308'
+				},
+				brown: {
+					DEFAULT: '#584949',
+					500: '#584949'
 				},
 				secondary: {
 					DEFAULT: 'hsl(var(--secondary))',
@@ -73,6 +112,15 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				}
+			},
+			fontFamily: {
+				'inter': ['Inter', 'sans-serif'],
+			},
+			fontSize: {
+				'heading-1': ['18px', { lineHeight: '1.2' }],
+				'heading-2': ['16px', { lineHeight: '1.2' }],
+				'heading-3': ['14px', { lineHeight: '1.2' }],
+				'heading-4': ['12px', { lineHeight: '1.2' }],
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -113,8 +161,8 @@ export default {
 				'fade-in': 'fade-in 0.3s ease-out'
 			},
 			backgroundImage: {
-				'gradient-primary': 'linear-gradient(135deg, #8B3CF7 0%, #A066FF 50%, #C399FF 100%)',
-				'gradient-purple': 'linear-gradient(90deg, #8B3CF7 0%, #7C22E8 100%)'
+				'gradient-primary': 'linear-gradient(135deg, #7C20A1 0%, #A066FF 50%, #C399FF 100%)',
+				'gradient-purple': 'linear-gradient(90deg, #7C20A1 0%, #701A75 100%)'
 			}
 		}
 	},
